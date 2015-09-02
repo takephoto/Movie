@@ -8,7 +8,7 @@
 
 #import "YYMovieController.h"
 #import "YYMovieCell.h"
-#import <SDWebImage/SDWebImageDownloader.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 
 @interface YYMovieController ()<UICollectionViewDataSource,UICollectionViewDelegate>
@@ -80,7 +80,7 @@
     static NSString *idx = @"Movie" ;
     [collectionView registerClass:[YYMovieCell class] forCellWithReuseIdentifier:idx] ;
     YYMovieCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:idx forIndexPath:indexPath] ;
-    cell.image.image = [UIImage imageNamed:@"preview"] ;
+    [cell.image sd_setImageWithURL:[NSURL URLWithString:@"http://cc.cocimg.com/api/uploads/150707/504851a01d525a2a982b9d56c6e54267.jpg"] ] ;
     
     return cell ;
 }

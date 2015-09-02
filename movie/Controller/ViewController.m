@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "YYTableView.h"
 #import "YYMovieController.h"
+#import "YYMoreThreadController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -24,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    array = @[@"Collection View"] ;
+    array = @[@"Collection View",@"iOS多线程"] ;
     
     [self addTableView] ; 
 }
@@ -39,6 +40,9 @@
     tableview.dataSource = self ;
     
     [self.view addSubview:tableview] ;
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -72,8 +76,8 @@
     
     cell.textLabel.text = title ;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator ;
-    cell.detailTextLabel.text = @"The name is exits" ;
     
+    cell.detailTextLabel.text = @"The name is exits" ;
     return cell ;
 }
 
@@ -83,8 +87,16 @@
     if(indexPath.row == 0)
     {
         YYMovieController *movieCtr = [[YYMovieController alloc] init] ;
+        self.hidesBottomBarWhenPushed = YES ;
         [self.navigationController pushViewController:movieCtr animated:YES] ;
+        self.hidesBottomBarWhenPushed = NO ;
+    }else if(indexPath.row == 1){
+        YYMoreThreadController *moreThread = [[YYMoreThreadController alloc] init] ;
+        self.hidesBottomBarWhenPushed = YES ;
+        [self.navigationController pushViewController:moreThread animated:YES] ;
+        self.hidesBottomBarWhenPushed = NO ;
     }
+    
     
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "YYTRootController.h"
 
 @interface AppDelegate ()
 
@@ -20,11 +20,10 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds] ;
     self.window.backgroundColor = [UIColor whiteColor] ;
+
+    YYTRootController *tabBar = [[YYTRootController alloc] init] ;
+    self.window.rootViewController = tabBar ;
     
-    ViewController *view = [[ViewController alloc] init] ;
-    UINavigationController *root = [[UINavigationController alloc] initWithRootViewController:view] ;
-    
-    self.window.rootViewController = root ;
     [self.window makeKeyAndVisible] ;
     return YES;
 }
