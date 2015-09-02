@@ -10,6 +10,9 @@
 
 @implementation YYOperation
 
-
+-(void)main
+{
+    
+}
 
 @end

@@ -14,6 +14,11 @@
 #import <objc/objc-runtime.h>
 #import "User.h"
 #import "YYProcessHUD.h"
+
+typedef void(^MyBlock)(void);
+
+typedef NSString* (^Finish)(void);
+
 @implementation YYMoreThreadController
 
 
@@ -70,6 +75,33 @@
     
     [self.view addSubview:process] ;
     
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init] ;
+    
+    NSInvocationOperation *operation1 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(run1) object:nil] ;
+    [queue addOperation:operation1] ;
+    
+    NSBlockOperation *operation2 = [[NSBlockOperation alloc] init] ;
+    
+    MyBlock block = ^(void){
+        NSLog(@"my is NSBlockOperation call") ;
+    } ;
+    [operation2 addExecutionBlock:block] ;
+    [operation2 addDependency:operation1] ;
+    [queue addOperation:operation2] ;
+    
+    Finish finsh = ^(void)
+    {
+        return @"cc" ;
+    } ;
+    
+    NSString *name = finsh() ;
+    NSLog(@"%@",name) ;
+}
+
+- (void) run1
+{
+    NSLog(@"my is NSInvocationOperation call") ;
 }
 
 
