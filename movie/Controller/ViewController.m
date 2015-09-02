@@ -25,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setNaviBarLeftBtn:[CustomNaviBarView createImgNaviBarBtnByImgNormal:@"title_back" imgHighlight:@"title_back_sel" imgSelected:@"title_back_sel" target:self action:nil]] ;
+    
     array = @[@"Collection View",@"iOS多线程"] ;
     
     [self addTableView] ; 
@@ -35,6 +37,7 @@
 {
     tableview = [[YYTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain] ;
     
+    [UtilityFunc resetScrlView:tableview contentInsetWithNaviBar:YES tabBar:YES iOS7ContentInsetStatusBarHeight:-1 inidcatorInsetStatusBarHeight:-1];
     tableview.tableFooterView = [[UIView alloc] init] ;
     tableview.delegate = self ;
     tableview.dataSource = self ;

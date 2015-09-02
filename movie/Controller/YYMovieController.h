@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "YYMovieListView.h"
 
-@interface YYMovieController : UIViewController
+@interface YYMovieController : CustomViewController
 
 @end

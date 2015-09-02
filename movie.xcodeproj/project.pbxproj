@@ -23,6 +23,12 @@
 		DD7B63261B95872B00BD25E0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7B63251B95872B00BD25E0 /* User.m */; };
 		DD7B63291B95953700BD25E0 /* YYDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7B63281B95953700BD25E0 /* YYDateUtils.m */; };
 		DD7B632C1B95A2AE00BD25E0 /* YYProcessHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7B632B1B95A2AE00BD25E0 /* YYProcessHUD.m */; };
+		DD8E2A331B96D45A00BD51B6 /* YYNagivationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8E2A321B96D45A00BD51B6 /* YYNagivationBar.m */; };
+		DD8E2A401B96D74700BD51B6 /* CustomNaviBarSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8E2A361B96D74700BD51B6 /* CustomNaviBarSearchController.m */; };
+		DD8E2A411B96D74700BD51B6 /* CustomNaviBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8E2A381B96D74700BD51B6 /* CustomNaviBarView.m */; };
+		DD8E2A421B96D74700BD51B6 /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8E2A3A1B96D74700BD51B6 /* CustomNavigationController.m */; };
+		DD8E2A431B96D74700BD51B6 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8E2A3C1B96D74700BD51B6 /* CustomViewController.m */; };
+		DD8E2A441B96D74700BD51B6 /* UtilityFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8E2A3F1B96D74700BD51B6 /* UtilityFunc.m */; };
 		DD8FDFC61B8C01DA009FE166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8FDFC51B8C01DA009FE166 /* main.m */; };
 		DD8FDFC91B8C01DA009FE166 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8FDFC81B8C01DA009FE166 /* AppDelegate.m */; };
 		DD8FDFCF1B8C01DA009FE166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8FDFCD1B8C01DA009FE166 /* Main.storyboard */; };
@@ -75,6 +81,20 @@
 		DD7B63281B95953700BD25E0 /* YYDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDateUtils.m; sourceTree = "<group>"; };
 		DD7B632A1B95A2AE00BD25E0 /* YYProcessHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYProcessHUD.h; sourceTree = "<group>"; };
 		DD7B632B1B95A2AE00BD25E0 /* YYProcessHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYProcessHUD.m; sourceTree = "<group>"; };
+		DD8E2A311B96D45A00BD51B6 /* YYNagivationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNagivationBar.h; sourceTree = "<group>"; };
+		DD8E2A321B96D45A00BD51B6 /* YYNagivationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYNagivationBar.m; sourceTree = "<group>"; };
+		DD8E2A351B96D74700BD51B6 /* CustomNaviBarSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNaviBarSearchController.h; sourceTree = "<group>"; };
+		DD8E2A361B96D74700BD51B6 /* CustomNaviBarSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNaviBarSearchController.m; sourceTree = "<group>"; };
+		DD8E2A371B96D74700BD51B6 /* CustomNaviBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNaviBarView.h; sourceTree = "<group>"; };
+		DD8E2A381B96D74700BD51B6 /* CustomNaviBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNaviBarView.m; sourceTree = "<group>"; };
+		DD8E2A391B96D74700BD51B6 /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
+		DD8E2A3A1B96D74700BD51B6 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
+		DD8E2A3B1B96D74700BD51B6 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		DD8E2A3C1B96D74700BD51B6 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		DD8E2A3D1B96D74700BD51B6 /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		DD8E2A3E1B96D74700BD51B6 /* UtilityFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityFunc.h; sourceTree = "<group>"; };
+		DD8E2A3F1B96D74700BD51B6 /* UtilityFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityFunc.m; sourceTree = "<group>"; };
+		DD8E2A451B96DA2A00BD51B6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DD8FDFC01B8C01DA009FE166 /* movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8FDFC41B8C01DA009FE166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD8FDFC51B8C01DA009FE166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -182,6 +202,7 @@
 		DD7B63171B957C1500BD25E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD8E2A341B96D74700BD51B6 /* CustomNavigationBar */,
 				DD7B63181B957C1500BD25E0 /* MoreView.h */,
 				DD7B63191B957C1500BD25E0 /* MoreView.m */,
 				DD7B631A1B957C1500BD25E0 /* YYMovieCell.h */,
@@ -192,8 +213,28 @@
 				DD7B631F1B957C1500BD25E0 /* YYTableView.m */,
 				DD7B632A1B95A2AE00BD25E0 /* YYProcessHUD.h */,
 				DD7B632B1B95A2AE00BD25E0 /* YYProcessHUD.m */,
+				DD8E2A311B96D45A00BD51B6 /* YYNagivationBar.h */,
+				DD8E2A321B96D45A00BD51B6 /* YYNagivationBar.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DD8E2A341B96D74700BD51B6 /* CustomNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				DD8E2A351B96D74700BD51B6 /* CustomNaviBarSearchController.h */,
+				DD8E2A361B96D74700BD51B6 /* CustomNaviBarSearchController.m */,
+				DD8E2A371B96D74700BD51B6 /* CustomNaviBarView.h */,
+				DD8E2A381B96D74700BD51B6 /* CustomNaviBarView.m */,
+				DD8E2A391B96D74700BD51B6 /* CustomNavigationController.h */,
+				DD8E2A3A1B96D74700BD51B6 /* CustomNavigationController.m */,
+				DD8E2A3B1B96D74700BD51B6 /* CustomViewController.h */,
+				DD8E2A3C1B96D74700BD51B6 /* CustomViewController.m */,
+				DD8E2A3D1B96D74700BD51B6 /* GlobalDefine.h */,
+				DD8E2A3E1B96D74700BD51B6 /* UtilityFunc.h */,
+				DD8E2A3F1B96D74700BD51B6 /* UtilityFunc.m */,
+			);
+			path = CustomNavigationBar;
 			sourceTree = "<group>";
 		};
 		DD8FDFB71B8C01DA009FE166 = {
@@ -238,6 +279,7 @@
 		DD8FDFC31B8C01DA009FE166 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD8E2A451B96DA2A00BD51B6 /* PrefixHeader.pch */,
 				DD8FDFC41B8C01DA009FE166 /* Info.plist */,
 				DD8FDFC51B8C01DA009FE166 /* main.m */,
 			);
@@ -407,18 +449,24 @@
 				DD7B63001B9576EB00BD25E0 /* YYOperation.m in Sources */,
 				DD7B63161B957B1100BD25E0 /* AppConfig.m in Sources */,
 				DD7B63211B957C1500BD25E0 /* YYMovieCell.m in Sources */,
+				DD8E2A431B96D74700BD51B6 /* CustomViewController.m in Sources */,
 				DD7B62FC1B9576DE00BD25E0 /* YYDocument.m in Sources */,
 				DD7B62F31B9576A100BD25E0 /* ViewController.m in Sources */,
+				DD8E2A331B96D45A00BD51B6 /* YYNagivationBar.m in Sources */,
 				DD7B63261B95872B00BD25E0 /* User.m in Sources */,
+				DD8E2A411B96D74700BD51B6 /* CustomNaviBarView.m in Sources */,
 				DD7B62F71B9576A100BD25E0 /* YYTRootController.m in Sources */,
 				DD7B62F61B9576A100BD25E0 /* YYNavigationController.m in Sources */,
 				DD7B63231B957C1500BD25E0 /* YYTableView.m in Sources */,
 				DD7B63291B95953700BD25E0 /* YYDateUtils.m in Sources */,
 				DD7B63201B957C1500BD25E0 /* MoreView.m in Sources */,
+				DD8E2A401B96D74700BD51B6 /* CustomNaviBarSearchController.m in Sources */,
 				DD7B63221B957C1500BD25E0 /* YYMovieListView.m in Sources */,
 				DD7B632C1B95A2AE00BD25E0 /* YYProcessHUD.m in Sources */,
+				DD8E2A421B96D74700BD51B6 /* CustomNavigationController.m in Sources */,
 				DD7B62F51B9576A100BD25E0 /* YYMovieController.m in Sources */,
 				DD8FDFC91B8C01DA009FE166 /* AppDelegate.m in Sources */,
+				DD8E2A441B96D74700BD51B6 /* UtilityFunc.m in Sources */,
 				DD8FDFC61B8C01DA009FE166 /* main.m in Sources */,
 				DD7B62F41B9576A100BD25E0 /* YYMoreThreadController.m in Sources */,
 			);
@@ -549,6 +597,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/yangyang/Movie/movie/PrefixHeader.pch;
 				INFOPLIST_FILE = movie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -564,6 +614,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/yangyang/Movie/movie/PrefixHeader.pch;
 				INFOPLIST_FILE = movie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  movie
+//
+//  Created by 杨洋 on 15/9/2.
+//  Copyright (c) 2015年 杨洋. All rights reserved.
+//
+
+#ifndef movie_PrefixHeader_pch
+#define movie_PrefixHeader_pch
+
+
+#define ___MAX___ 
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "GlobalDefine.h"
+#import "CustomViewController.h"
+
+#endif

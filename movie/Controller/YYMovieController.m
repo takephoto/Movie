@@ -20,12 +20,21 @@
 @implementation YYMovieController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
     
+
+    [super viewDidLoad];
+    self.wantsFullScreenLayout = YES ;
+    [self setNaviBarLeftBtn:[CustomNaviBarView createImgNaviBarBtnByImgNormal:@"title_back" imgHighlight:@"title_back_sel" imgSelected:@"title_back_sel" target:self action:@selector(back)]] ;
+    [self setNaviBarTitle:@"热门电影"] ;
     [self initView] ;
     
     [self initNagivationItem] ;
     // Do any additional setup after loading the view.
+}
+
+- (void) back
+{
+    [self.navigationController popViewControllerAnimated:YES] ;
 }
 
 
@@ -41,7 +50,8 @@
     layout.minimumInteritemSpacing = 0.0f ;
     layout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5) ;
     
-    YYMovieListView *listView = [[YYMovieListView alloc] initWithFrame:[UIScreen mainScreen].bounds collectionViewLayout:layout] ;
+    YYMovieListView *listView = [[YYMovieListView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout] ;
+    [UtilityFunc resetScrlView:listView contentInsetWithNaviBar:YES tabBar:NO iOS7ContentInsetStatusBarHeight:-1 inidcatorInsetStatusBarHeight:-1];
     
     listView.backgroundColor = [UIColor whiteColor] ;
     listView.collectionViewLayout = layout ;

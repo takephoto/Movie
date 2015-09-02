@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YYMoreThreadController : UIViewController
+@interface YYMoreThreadController : CustomViewController
 
 @end

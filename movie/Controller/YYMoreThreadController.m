@@ -22,8 +22,10 @@ typedef NSString* (^Finish)(void);
 @implementation YYMoreThreadController
 
 
+
 - (void)viewDidLoad
 {
+    
     MoreView *moreView = [[MoreView alloc] initWithStyle:MoreViewStyleDefault target:self action:@selector(loadCompleted)] ;
     
 //    MBProgressHUD *mb = [[MBProgressHUD alloc] initWithView:self.view] ;

@@ -8,6 +8,7 @@
 
 #import "YYTRootController.h"
 #import "ViewController.h"
+#import "CustomNavigationController.h"
 @implementation YYTRootController
 
 
@@ -23,28 +24,28 @@
     self = [super init];
     if (self) {
         ViewController *view1 = [[ViewController alloc] init] ;
-        UINavigationController *root1 = [[UINavigationController alloc] initWithRootViewController:view1] ;
+        CustomNavigationController *root1 = [[CustomNavigationController alloc] initWithRootViewController:view1] ;
         [[root1 navigationBar] setBarTintColor:[UIColor redColor]] ;
         UITabBarItem *view1Item = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemTopRated tag:1] ;
         root1.tabBarItem = view1Item ;
         
         ViewController *view2 = [[ViewController alloc] init] ;
-        UINavigationController *root2 = [[UINavigationController alloc] initWithRootViewController:view2] ;
+        CustomNavigationController *root2 = [[CustomNavigationController alloc] initWithRootViewController:view2] ;
         UITabBarItem *view2Item = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemSearch tag:2] ;
         root2.tabBarItem = view2Item ;
         
         ViewController *view3 = [[ViewController alloc] init] ;
-        UINavigationController *root3 = [[UINavigationController alloc] initWithRootViewController:view3] ;
+        CustomNavigationController *root3 = [[CustomNavigationController alloc] initWithRootViewController:view3] ;
         UITabBarItem *view3Item = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:3] ;
         root3.tabBarItem = view3Item ;
         
         ViewController *view4 = [[ViewController alloc] init] ;
-        UINavigationController *root4 = [[UINavigationController alloc] initWithRootViewController:view4] ;
+        CustomNavigationController *root4 = [[CustomNavigationController alloc] initWithRootViewController:view4] ;
         UITabBarItem *view4Item = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:4] ;
         root4.tabBarItem = view4Item ;
         
         ViewController *view5 = [[ViewController alloc] init] ;
-        UINavigationController *root5 = [[UINavigationController alloc] initWithRootViewController:view5] ;
+        CustomNavigationController *root5 = [[CustomNavigationController alloc] initWithRootViewController:view5] ;
         UITabBarItem *view5Item = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:5] ;
         root5.tabBarItem = view5Item ;
         
