@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initView] ;
+    [self initView] ; //初始化界面内容
     
     [self initNagivationItem] ;
     // Do any additional setup after loading the view.
